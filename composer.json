@@ -1,0 +1,30 @@
+{
+    "name": "buzzingpixel/symfony-var-dumper-decorator",
+    "license": "Apache-2.0",
+    "require": {
+        "php": ">=8.1",
+        "symfony/var-dumper": "^6.2"
+    },
+    "require-dev": {
+        "doctrine/coding-standard": "^11.0.0",
+        "phpstan/phpstan": "^1.10",
+        "phpstan/phpstan-deprecation-rules": "^1.1",
+        "phpstan/phpstan-strict-rules": "^1.5",
+        "squizlabs/php_codesniffer": "^3.6"
+    },
+    "autoload": {
+        "files": [
+            "src/dump.php"
+        ],
+        "psr-4": {
+            "BuzzingPixel\\SymfonyVarDumperDecorator\\": "src"
+        }
+    },
+    "config": {
+        "bin-compat": "full",
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
